@@ -5,13 +5,37 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  mode: "jit",
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        primary: "#C778DD",
+        backgnd: "#282C33",
+        grayy: "#ABB2BF",
+        
+        //Shades of Black
+        midnightBlue: "#101720",
+        deepNavyBlue: "#011222",
+        charcoalGray: "#171717",
+        richBlack: "#020D19",
+        oilBlack: "#0C0C0C",
+        darkSlateGray: "#0D1717",
+        obsidian: "0B1215",
+
+        //SHades of White
+        ghostWhite: "#F8F8FF",
+        ivory: "#FFFFF0",
+        snow: "FFFAFA",
+        offWhite: "#FAF9F6"
       },
+    },
+    screens: {
+      xs: "480px",
+      ss: "620px",
+      sm: "768px",
+      md: "1060px",
+      lg: "1200px",
+      xl: "1700px",
     },
   },
   plugins: [],
